@@ -1,0 +1,264 @@
+
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    padding-top: 3.5rem;
+    margin:0%;
+    font-family:'Montserrat', 'sans-serif';
+  height: 100%;
+  grid-template-rows: auto 80rem;
+}
+.back-drop{
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+
+}
+.main-header{
+    display: flex; 
+    top:0%; 
+    background-color:#19b84c;
+      color:#2ddf5c;
+      width: 100%;
+      margin: 0%;
+      position: fixed;
+      z-index: 100;
+      align-items: center;
+      justify-content: space-between;
+}
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+@media(min-width:57rem){
+    .toggle-button{
+        display :none;
+    }
+
+
+}
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: black;
+  display: block;
+  margin: 0.6rem 0;
+}
+
+.button{
+    background-color: #0e4f1f;
+    color: white;
+    font: inherit;
+    border: 1.5px solid #0e4f1f;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight:bold;
+    cursor:pointer;
+}
+.button:hover,
+.button:active{
+    color:#0e4f1f;
+    background: white;
+    border-bottom: 3px solid black;
+}
+
+.button:focus{
+    outline: none;
+}
+
+.main-brand{
+    
+    text-decoration: none;
+    font-weight:bolder;
+    font-size: 20;
+    color:darkgreen;
+   
+}
+.main-brand img{
+    height: 2.5rem;
+    vertical-align: middle;
+
+}
+
+.main-nav{
+    
+    display: flex;
+}
+.main-nav-items{
+    text-align: right;
+    display:flex;
+    list-style: none;
+
+
+    
+   
+}
+
+.main-nav-item {
+    
+   
+    margin: 0 60px;
+   
+}
+
+.main-nav-item a:hover,
+.main-nav-item a:active,
+.mobile-nav__item a:hover,
+.mobile-nav__item a:active{
+     
+color:white;
+border-bottom: 2px solid white;
+}
+
+.main-nav-item a,
+.mobile-nav__item a{
+    margin: 0%;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    color:darkgreen;
+    font-weight: bolder;
+    
+}
+
+.main-nav-item-cta a,
+.mobile-nav__item--cta a{
+    color: white;
+    background:crimson;
+    border-radius: 8px;
+    padding:8% 20px
+
+}
+.main-nav-item-cta a:hover,
+.main-nav-item-cta a:active,
+.mobile-nav__item--cta a:hover,
+.mobile-nav__item--cta a:active{
+    color:crimson;
+    background: wheat;
+    border: none;
+}
+.main-nav-item-cta{
+ 
+    animation: wiggle 200ms 2s 8;
+    background-color: #19b84c;
+
+}
+.main-footer{
+    background: black;
+    margin: 1rem 0;
+    padding:48px;
+}
+.main-footer > ul{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+.main-footer-links{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.link{
+  
+    margin: 0.5rem 16px;
+}
+.link a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.link a:hover,
+.link a:active{
+    color: #ccc;
+}
+.mobile-nav {
+     display: none; 
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    background:white;
+    width: 80%;
+    height: 100vh;
+  }
+  
+  .mobile-nav__items {
+    width: 90%;
+    height: 100%;
+    list-style: none;
+    margin: 0% auto;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .mobile-nav__item {
+    margin: 1rem 0;
+   
+  }
+  
+  .mobile-nav__item a {
+    font-size: 1.5rem;
+    padding:16px;
+  } 
+
+.open{
+    display:block !important;
+    opacity: 1!important;
+    transform: translatey(0)!important;
+}
+
+
+@media(max-width:57rem){
+    .main-nav{
+        display:none;
+    }
+    .main-header{
+        text-align:left !important;; 
+    }
+    #anus{
+        height: 50%
+    }
+}
+@media(min-width:40 rem) {
+    .main-footer-links {
+        margin: 0 1 rem;
+    }
+}
+
+@keyframes wiggle{
+    from{
+transform:rotateZ(-10deg);
+background-color: #19b84c;
+    }
+
+    to {
+      transform: rotateZ(10deg)
+    }
+}

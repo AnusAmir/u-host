@@ -1,0 +1,298 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0%;
+  font-family:'Montserrat', sans-serif;
+}
+
+.backdrop{
+    display:none;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+
+}
+.abc{
+    color: aliceblue !important
+}
+
+
+
+
+#anus{
+    font-family: 'Anton', sans-serif;
+    background:url("./freedom.jpg") center/cover no-repeat border-box ;
+    width: 100vw; ;
+    padding: 10px;
+    height: 33vh;
+    
+    position:relative;
+}
+
+
+
+@media(min-width:57rem) and (min-height:60rem){
+    #anus{
+        height: 50vh;
+        background-position: 50% 25%;
+    }
+}
+
+#anus h1{
+    position: absolute;
+    bottom:5%;
+    left:2%;
+    color:white;
+    font-size: 1.5rem;
+}
+
+
+
+
+@media(min-width:35rem){
+    #anus h1 {
+        font-size: 2.3rem;
+        color:white;
+    }
+}
+
+@media(min-width:45rem){
+    #anus h1 {
+        color:#3d4d40;
+        font-size: 3rem;
+    }
+}
+
+
+@media(min-width:60rem){
+    #anus h1 {
+        font-size: 4rem;
+        color:#3d4d40;
+    }
+}
+
+
+@media (min-width:74rem){
+    #anus h1 {
+        font-size: 5rem;
+        bottom: -12px;
+        left:2rem;
+        color:#3d4d40;
+    }
+}
+
+
+p {
+   font-family: 'Montserrat', sans-serif; 
+}
+
+
+.choose{ 
+    color:#2ddf5c;
+    text-align: center;
+}
+.plan{
+    background-color: #9cc7a3;
+    text-align: center;
+    padding: 1rem;
+    margin:  0.5rem 0;
+    width: 100%;
+    border-radius: 5px;
+  
+}
+.plan-title{
+    color:#0e4f1f; 
+}
+.plan-price{
+    color: #6d6565;
+}
+.plan-2 .plan-title{
+    color: white;
+}
+.plan-2{
+    background-color:#19b84c;
+    color: white;
+    
+}
+.plan-head{
+    background: white;
+    color:#19b84c;
+    border-radius:4px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px rgba( 0, 0, 0, 0.5);
+
+}
+.list{
+    list-style:none;
+    padding-right: 40px;
+
+}
+.space{
+    margin:10px 0;
+}
+
+@media (min-width: 57rem){
+ 
+ .plan_list{  
+    width: 100%;
+    text-align: center;
+} 
+    .plan{
+        display:inline-block;
+        width:30%;
+        vertical-align: middle;
+        min-width: 15rem;
+        max-width: 32rem; 
+    }
+    .plan-2{
+ box-shadow:2px 2px 2px 2p x rgba(0, 0, 0, 0.5); 
+    }
+}
+
+
+
+
+.button{
+    background-color: #0e4f1f;
+    color: white;
+    font: inherit;
+    border: 1.5px solid #0e4f1f;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight:bold;
+    cursor:pointer;
+}
+.button:hover,
+.button:active{
+    color:#0e4f1f;
+    background: white;
+    border-bottom: 3px solid black;
+}
+
+.button:focus{
+    outline: none;
+}
+.image{
+    width: 10px
+}
+#key-features{
+    background:crimson;
+    margin-top: 80px;
+    padding: 32px;
+    text-align: center;
+}
+
+.key-feature-list{
+    list-style: none;
+    margin: 0;
+    padding:0;
+    vertical-align: middle;
+}
+
+
+@media(min-width:57rem){
+    .key-feature{
+        display:inline-block;
+        width:30%;
+        max-width: 32rem;
+    }
+}
+.image{
+    background: #ffcede;
+    width:128px;
+    height: 128px;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    margin: auto;
+     padding: 20px;
+
+}
+.description{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px
+}
+
+.modal {
+    position: fixed;
+    opacity: 0;
+    transform: translateY(-5rem);
+    z-index: 200;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    transition: opacity 0.5s, transform 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    
+  }
+
+  
+  .modal__title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+  
+  .modal__actions {
+    text-align: center;
+  }
+  
+  .modal__action {
+    border: 1px solid #0e4f1f;
+    background: #0e4f1f;
+    text-decoration: none;
+    color: white;
+    font: inherit;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .modal__action:hover,
+  .modal__action:active {
+    background: #2ddf5c;
+    border-color: #2ddf5c;
+  }
+  
+  .modal__action--negative {
+    background: red;
+    border-color: red;
+  }
+  
+  .modal__action--negative:hover,
+  .modal__action--negative:active {
+    background: #ff5454;
+    border-color: #ff5454;
+  }
+
+@media(max-width:680px){
+    .modal{
+        width: 250px;
+    }
+    .modal__title{
+        font-size: 1rem;
+    }
+}
+
+
+@media(max-width:595px){
+    .modal{
+        
+        left: 17%;
+    }
+    
+    
+}
+
+
+
+
+
+
+
