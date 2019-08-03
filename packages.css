@@ -1,0 +1,129 @@
+body{
+    font-family:'Montserrat', sans-serif;
+}
+
+main{
+    padding-top: 72px;
+}
+
+.background{
+    background-image: url(./plans-background.jpg);
+    background-position:center; 
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
+    z-index: -1;
+    margin: 0%
+}
+
+
+.package{
+    width: 80%;
+    margin: 16px 0;
+    border: 4px solid #0e4f15;
+    border-left: none;
+    border-radius: 8px;
+    height: 40%;
+    position: relative;
+    min-width: 372.79;
+    overflow: hidden;
+}
+
+.package:hover,
+.package:active{
+    border-color:#ff5454;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5)
+}
+.package a{
+text-decoration: none;
+color: inherit;
+display: block;
+padding:  32px;
+}
+
+.package-badge{
+    position:absolute;
+    top:0%;
+right: 0px;
+font-size: 15px;
+margin: 0%;
+color: white;
+background: #ff5454;
+padding:8px;
+transform: rotateZ(45deg)translateX(6rem) translateY(-1.5rem);
+width: 20rem;
+text-align: center;
+
+
+}
+
+
+.package_subtitle{
+    color:#979797;
+}
+.package_info{
+    border:1px solid #0e4f1f;
+    padding: 16px;
+    font-size: 20px;
+    color: #0e4f1f; 
+    background: white;
+}
+.clearfix{
+    clear: both;
+}
+#plus{
+    background: rgba(213, 255, 220, 0.95);
+
+}
+#free{
+    background: rgba(234, 257, 237, 0.95);
+    float:right;
+    border-left:  4px solid #0e4f15;
+    border-right: none;
+    text-align: right;
+}    
+#free:hover,
+#free:active{
+    border-left-color: #ff5454
+}
+#premium{
+    background: rgba(14, 79, 31, 0.95)
+}
+#premium .package_title{
+    color: white;
+}
+#premium .package_subtitle{
+    color: #bbb
+}
+
+
+
+
+@media(max-width:40rem){
+    .package_subtitle{
+        font-size: 1.3rem
+    }
+    .package{
+        height: 30%;
+    }
+    .package_info{
+        font-size: 1.1rem;
+        padding: 3px;
+    }
+    #free{
+        float: none;
+        text-align:left;
+    }
+    .package-badge{
+        top: -4px;
+        right: 13px;
+        padding: 6px;
+    }
+}
+
+@media(max-width:57rem){
+    .package{
+        width: 99vw;
+    }
+    
+}
